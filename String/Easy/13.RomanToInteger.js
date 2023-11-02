@@ -22,6 +22,11 @@
  * 整數值為n2+n1。
  */
 
+/**
+ * Acceptance
+ * 59.7%
+ */
+
 
 /**
  * @param {string} s
