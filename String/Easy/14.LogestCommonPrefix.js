@@ -20,6 +20,11 @@
  */
 
 /**
+ * Acceptance
+ * 41.7%
+ */
+
+/**
  * @param {string[]} strs
  * @return {string}
  * @Author Jerry Chen
