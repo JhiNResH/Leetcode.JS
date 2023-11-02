@@ -5,10 +5,10 @@
  */
 
 /**
- * 翻譯：
+ * 解釋：
  * 給一個羅馬數字，將它轉換成整數，這個數字的範圍是1~3999。
  * 
- * 範例：
+ * Ex.
  * I = 1, IX = 9
  */
 
@@ -28,6 +28,7 @@
  * @return {number}
  * @author Jerry Chen
  */
+
 var romanToInt = function (s) {
     var map = {
         I: 1,
@@ -41,8 +42,11 @@ var romanToInt = function (s) {
 
     var sum = 0;
     for (var i = 0; i < s.length; i++) {
+        // s[i] 表示字符中第i個字符，s[i+1] 表示字符中第i+1個字符
+        // Ex. 如果s[i]值為Ｘ，則 maps[s[i]]值為10
         var v1 = map[s[i]];
         var v2 = map[s[i + 1]];
+        // 如果當前數字字符比下一個字符表示的數字小，則兩數字相減，否則將當前數字加總到總合中。
         if (v2 > v1) {
             sum = sum + v2 - v1;
             i++;
