@@ -1,4 +1,5 @@
 /**
+ * 首刷時間: 2023-11-02
  * 題目：
  * Write a function to find the longest common prefix string amongst an array of strings.
  */
